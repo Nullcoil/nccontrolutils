@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "nccontrolutils",
+	"version": "${version}",
+	"name": "NCControlUtils",
+	"description": "Move control utils",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nccontrolutils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nullcoil.nccu.NCControlUtils"
+		],
+		"modmenu": ["net.nullcoil.nccu.ModMenuIntegration"]
+	},
+	"mixins": [
+		"nccontrolutils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
